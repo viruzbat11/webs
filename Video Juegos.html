@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Interactivo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    }
+    .navbar {
+      background-color: #222;
+      overflow: hidden;
+      position: relative;
+      padding: 3px 0;
+    }
+    .navbar a {
+      float: left;
+      display: block;
+      color: rgba(255, 255, 255, 0.5);
+      text-align: center;
+      padding: 18px 19px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .navbar a:hover { color: white; }
+    .navbar a.inicio:hover { color: blue; }
+    .navbar a.noticias:hover { color: yellow; }
+    .navbar a.evolucion:hover { color: red; }
+    .navbar a.historia:hover { color: orange; }
+    .navbar a.fanarts:hover { color: blue; }
+    .navbar a.videojuegos:hover { color: violet; }
+    .search-box {
+      float: right;
+      padding: 10px 30px;
+    }
+    .search-box input[type="text"] {
+      background-color: rgb(5, 5, 5);
+      color: white; /* Cambiado a blanco para mejor visibilidad */
+      border-radius: 10px;
+      padding: 6px;
+      margin-top: 1px;
+      border: none;
+      font-size: 18px;
+    }
+    /* Estilos para el menú hamburguesa */
+    .hamburguer-menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: -250px; /* Inicialmente oculto a la izquierda */
+      width: 250px;
+      background-color: #222;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      padding: 10px 0;
+      z-index: 2;
+      transition: left 0.3s; /* Agregado para animar la aparición/desaparición */
+    }
+    .hamburguer-menu a {
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+      color: white;
+      text-align: left;
+    }
+    .hamburguer-menu a:hover {
+      background-color: #333;
+    }
+    .hamburguer-icon {
+      cursor: pointer;
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      padding: 10px;
+      z-index: 3;
+    }
+    /* Contenido de las secciones */
+    .content-section {
+      display: none;
+      padding: 15px;
+      background-color: #333;
+      color: white; /* Definido color blanco */
+      border: 1px solid #333;
+      margin-top: 5px;
+    }
+    .active-section {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="hamburguer-icon" onclick="toggleHamburguerMenu()"></div>
+<div id="hamburguerMenu" class="hamburguer-menu">
+  <a href="#cerrar-sesion">Cerrar Sesión</a>
+  <a href="#cambiar-cuenta">Cambiar Cuenta</a>
+</div>
+
+<div class="navbar" id="myNavbar">
+  <a href="Index.html" class="tablinks Index" onclick="openSection(event, 'Index')">Inicio</a>
+  <a href="noticias.html" class="tablinks noticias" onclick="openSection(event, 'noticias')">Noticias</a>
+  <a href="evolucion.html" class="tablinks evolucion" onclick="openSection(event, 'evolucion')">Evolución</a>
+  <a href="historia.html" class="tablinks historia" onclick="openSection(event, 'historia')">Historia</a>
+  <a href="Fan Arts.html" class="tablinks fanarts" onclick="openSection(event, 'fanarts')">Fan Arts</a>
+  <a href="video Juegos.html" class="tablinks videojuegos" onclick="openSection(event, 'videojuegos')">Video Juegos</a>
+  <div class="search-box">
+    <input type="text" placeholder="Search">
+  </div>
+</div> <!-- Cerrado el div de la navbar -->
+
+
+    <h1 style="font-size: 40px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: violet;">PRÓXIMAMENTE</h1>
+
+
+
+    <h1>Descargar Documento PDF</h1>
+    <a href="PDF/10 frases icónicas de Batman.pdf" download>Haz clic aquí para descargar el libro en  PDF</a>
+  
+    <h1>El Señor de la Noche</h1>
+    <audio controls>
+        <source src="Audio/El Señor de la Noche(M4A_128K).m4a" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+
+<br><br>
+
+<style>
+  .video-container {
+      width: 40%; /* Cambia este valor para ajustar el tamaño del video */
+      margin: 10px;
+      display: inline-block; /* Permite que el contenedor se alinee con otros elementos */
+  }
+  .video-left {
+      float: left;
+  }
+  .video-right {
+      float: right;
+  }
+  .video-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  video {
+      width: 100%; /* Asegura que el video ocupe el 100% del contenedor */
+      height: auto; /* Mantiene la proporción del video */
+  }
+</style>
+
+
+
+
+    <div class="video-container">
+      <video controls>
+          <source src="Video/BatmanGOAT.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+      </video>
+  </div>
+  
+
+  </body>
+</html>
+

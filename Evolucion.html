@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Interactivo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    }
+    .navbar {
+      background-color: #222;
+      overflow: hidden;
+      position: relative;
+      padding: 3px 0;
+    }
+    .navbar a {
+      float: left;
+      display: block;
+      color: rgba(255, 255, 255, 0.5);
+      text-align: center;
+      padding: 18px 19px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .navbar a:hover { color: white; }
+    .navbar a.inicio:hover { color: blue; }
+    .navbar a.noticias:hover { color: yellow; }
+    .navbar a.evolucion:hover { color: red; }
+    .navbar a.historia:hover { color: orange; }
+    .navbar a.fanarts:hover { color: blue; }
+    .navbar a.videojuegos:hover { color: violet; }
+    .search-box {
+      float: right;
+      padding: 10px 30px;
+    }
+    .search-box input[type="text"] {
+      background-color: rgb(0, 0, 0);
+      color: black;
+      padding: 6px;
+      margin-top: 1px;
+      border-radius: 10px;
+      border: none;
+      font-size: 18px;
+    }
+    /* Estilos para el menú hamburguesa */
+    .hamburguer-menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: -250px; /* Inicialmente oculto a la izquierda */
+      width: 250px;
+      background-color: #4d4d4d;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      padding: 10px 30px;
+      z-index: 2;
+      transition: left 0.3s; /* Agregado para animar la aparición/desaparición */
+    }
+    .hamburguer-menu a {
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+      color: white;
+      text-align: left;
+    }
+    .hamburguer-menu a:hover {
+      background-color: #333;
+    }
+    .hamburguer-icon {
+      cursor: pointer;
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      padding: 10px;
+      z-index: 3;
+    }
+    /* Contenido de las secciones */
+    .content-section {
+      display: none;
+      padding: 15px;
+      background-color: #333;
+      color: #;
+      border: 1px solid #333;
+      margin-top: 5px;
+    }
+    .active-section {
+      display: block;
+    }
+	
+  </style>
+</head>
+<body>
+
+<div class="hamburguer-icon" onclick="toggleHamburguerMenu()"></div>
+<div id="hamburguerMenu" class="hamburguer-menu">
+  <a href="#cerrar-sesion">Cerrar Sesión</a>
+  <a href="#cambiar-cuenta">Cambiar Cuenta</a>
+</div>
+
+<div class="navbar" id="myNavbar">
+  <a href="Index.html" class="tablinks Index" onclick="openSection(event, 'Index')">Inicio</a>
+  <a href="noticias.html" class="tablinks noticias" onclick="openSection(event, 'noticias')">Noticias</a>
+  <a href="evolucion.html" class="tablinks evolucion" onclick="openSection(event, 'evolucion')">Evolución</a>
+  <a href="historia.html" class="tablinks historia" onclick="openSection(event, 'historia')">Historia</a>
+  <a href="Fan Arts.html" class="tablinks fanarts" onclick="openSection(event, 'fanarts')">Fan Arts</a>
+  <a href="Video Juegos.html" class="tablinks videojuegos" onclick="openSection(event, 'videojuegos')">Video Juegos</a>
+  <div class="search-box">
+    <input type="text" placeholder="Search">
+  </div>
+
+
+  <h1 style="font-size: 45px; text-align: left; margin-left: 120px; margin-top: 65px; color:red;">Evolucion de Batman Live Accttion</h1>
+  <h2 style="font-size: 45px; text-align: left; margin-left: 120px; margin-top: 65px; color:rgb(202, 201, 201);">Lewis Wilson – Batman (1943)</h2>
+  <p style="font-size: 30px; text-align: justify; font-family:'Times News Roman'; margin-left: 80px; margin-right: 80px; color:rgb(202, 201, 201) ;"> 
+    <br> En 1943 y tan solo cuatro años de la aparición estelar de Batman en los cómics, se estrenó en la televisión estadounidense una serie basada en el héroe de Gótica y el encargado de darle vida a este personaje por primera vez en la pantalla chica fue el actor Lewis Wilson. Durante 15 episodios, Wilson se puso el traje e interpretó a Bruce Wayne, solo que su función no era precisamente el de agarrarse a catorrazos con el mal de su ciudad.
+    Resulta
+    </br>
+
+    <img  src ="Imag/B6.png" class="img-6"style="  position: relative;
+    left: 20px; 
+    right: 20px;
+    top: 30px; max-width:400px; alt=" >
+
+<h2 style="font-size: 45px; text-align: left; margin-left: 120px; margin-top: 65px; color: rgb(202, 202, 212);">Robert Lowery – ‘Batman & Robin’ (1949)></h2>
+<p style="font-size: 30px; text-align: justify; font-family:'Times News Roman'; margin-left: 80px; margin-right: 80px; color:rgb(202, 202, 212) ;"> 
+  <br> No fue hasta 1949 cuando Batman regresó a la pantalla chica, solo que en esta ocasión no fue de la mano de Lewis Wilson. En aquel año, Robert Lowery se encargó de tomar el papel del hombre murciélago en otra serie televisiva llamada Batman & Robin, que en realidad sería una secuela de la que apareció seis años antes y que tuvo una buena recepción en general, pero que no logró atrapar al público de la forma en que querían.<br><br>
+  A diferencia de la versión anterior, en esta ocasión, Batman deja de ser un agente para hacer lo que mejor sabe, enfrentarse a los villanos. En esta ocasión el malo es el Mago, un sujeto encapuchado con un dispositivo eléctrico que controla los coches y que además les pone retos a sus enemigos. ¡Al final, logran dar con su identidad secreta –muy a la Scooby Doo! – y aunque aún no mostraban las historias de los cómics, sí se acercaron un poco.
+  </br>
+
+  <img  src ="Imag/B7.png" class="img-7"style="  position: relative;left: 20px; 
+  right: 20px;
+  top: 30px; Max-width:600px; alt=" >
+
+<h2 style="font-size: 45px; text-align: left; margin-left: 120px; margin-top: 65px;color: orange ; ;">Adam West – ‘Batman’ (1966 – 1968)</h2>
+
+<p style="font-size: 30px; text-align: justify; font-family:'Times News Roman'; margin-left: 80px; margin-right: 80px; color: orange ;"> 
+  <br>  Tuvieron que pasar casi tres décadas para que Batman volviera a la televisión y de qué manera. En esta ocasión, Adam West dio vida a Bruce Wayne en una serie que se convirtió en un ícono de la cultura pop y para muchos, esta fue la primera versión que conocieron del héroe de Gótica y la definitiva. Por si esto no fuera suficiente, aquí también aparecieron personajes importantísimos como el Joker, el Acertijo, Catwoman, el Pingüino, Alfred, el comisionado Gordon.
+  
+  </br>
+  <img  src ="Imag/B8.png" class="img-8"style="  position: relative;left: 20px; 
+  right: 20px;
+  top: 30px; Max-width:600px; alt=" >
+
+  
+<h2 style="font-size: 45px; text-align: left; margin-left: 120px; margin-top: 65px;color: Yellow; ">Michael Keaton – ‘Batman’ (1989) y ‘Batman Returns’ (1992) y The Flash (2023)</h2>
+  <p style="font-size: 30px; text-align: justify; font-family:'Times News Roman'; margin-left: 80px; margin-right: 80px; color: yellow ;"> 
+    <br>  Luego del enorme éxito de Adam West como Batman, dejó la vara muy alta para aquellos que quisieran interpretar a este personaje. En 1989 y tras varios años de descansar a este superhéroe, Tim Burton quedó a cargo de la primera película del hombre murciélago y para el papel principal escogió a uno de los mejores actores del momento, ni más ni menos que Michael Keaton, quien nos regaló una interpretación espectacular.
+    Tres años después, Burton y Keaton volverían para Batman Returns –vaya la redundancia– en donde una vez más, demostraron que entendían muy bien a Bruce Wayne y su álter ego. Aunque no regresaron para la tercera cinta, ambos le dieron el toque maduro y serio que el héroe de Gótica se merecía, pero también sentaron las bases para lo que vendría en el futuro… a pesar de que hubo uno que otro descalabro que no nos gusta recordar.
+    Michael regresaría para hacer gritar a todos Fans de la emoción en la película de The Flash demostrando que es un Batman jodidamente increíble.</br>
+  
+    <img  src ="Imag/B9.png" class="img-9"style="  position: relative;  left:px; 
+  right: -80px;
+  top: -40px; Max-width:-1000px; alt=" >
+
+<img  src ="Imag/B10.png" class="img-10"style="  position: relative;  left:px; 
+  right: -200px;
+  top: 40px; Max-width:600px; alt=" >
+
+
+<h2 style="font-size: 45px; text-align: left; margin-left: 120px; margin-top: 65px; color: orange ;  "> Val Kilmer – ‘Batman Forever’ (1995)</h2>
+<p style="font-size: 30px; text-align: justify; font-family:'Times News Roman'; margin-left: 80px; margin-right: 80px; color: orange ;"> 
+  <br>  Como ya lo comentábamos antes, Michael Keaton y Tim Burton hicieron un excelente trabajo con el Batman que construyeron en la pantalla grande. Sin embargo, por distintas razones el actor no regresó para la siguiente película que planeaba Warner Bros. y su lugar como Bruce Wayne lo tomó Val Kilmer, quien a mediados de los 90 gozaba de una gran popularidad y todo pintaba para que fuera todo un éxito en taquilla.
+  En esta cinta, Batman se enfrenta a un par de villanos icónicos, Dos Caras y el Acertijo, en una historia dirigida por Joel Schumacher y que equilibraba la oscuridad de Burton con un poco de comedia que vimos en la serie de los 60. Pero quizá la mayor crítica se la llevó el propio Kilmer, pues a pesar de que no hizo un mal papel, muchos fans y medios lo deshicieron porque consideraban que su interpretación era un retroceso para el personaje.
+</br>
+
+<img  src ="Imag/B11.png" class="img-11"style="  position: relative;  left:40px; 
+  right: -200px;
+  top: 40px; Max-width:600px; alt=" >
+
+<img  src ="Imag/B12.png" class="img-12"style="  position: relative;  left:px; 
+right: -200px;
+top: 60px; Max-width:600px; alt=" >
+
+
+<br><br><h2 style="font-size: 45px; text-align: left; margin-left: 120px; margin-top: 65px; color: blue ;  ">George Clooney -‘Batman & Robin’ (1998) y The Flash Cameo (2023) </h2>
+<p style="font-size: 30px; text-align: justify; font-family:'Times News Roman'; margin-left: 80px; margin-right: 80px; color: blue;"> 
+  <br>  Después de la primera película dirigida por Joel Schumacher, Val Kilmer renunció a ser Batman en una secuela y por supuesto que las apuestas para tomar este icónico personaje estaban al por mayor. Al final, se decidieron por una de las estrellas más grandes de Hollywood en aquella época, ni más ni menos que George Clooney. Pero con lo que no contaban tanto él como los involucrados en Batman & Robin es que sería todo un desastre.<br><br>
+  Si a Kilmer le llovió gacho, a Clooney le llegó un diluvio. Para empezar, fue fuertemente criticado el traje –que como recordarán, incluía los famosos batipezones que daban cringe–, pero también elementos como la batitarjeta de crédito, que le dieron un toque infantil al héroe de Gótica. Y ni qué decir de las actuaciones, pues a pesar de contar con un elenco de primera, todo el mundo destrozó el trabajo de los actores y la verdad es que con justa razón. George Clooney regreso como una cameo sorpresa al final de la película de The flash eso fue inesperado Barry realmente aloco el multiverso con esa línea de tiempo.
+</br>
+
+<img  src ="Imag/B13.png" class="img-13"style="  position: relative;  left:px; 
+right: -50px;
+top: 70px; Max-width:600px; alt=" >
+
+<img  src ="Imag/B14.png" class="img-14"style="  position: relative;  left:px; 
+right: -140px;
+top: 70px; Max-width:600px; alt=" >
+
+<img  src ="Imag/B15.png" class="img-15"style="  position: relative;  left:px; 
+right: -200px;
+top: 70px; Max-width:600px; alt=" >
+
+<br><br><h2 style="font-size: 45px; text-align: left; margin-left: 120px; margin-top: 65px; color: white ;  ">Christian Bale – ‘Batman Begins’ (2005) ‘The Dark Knight’ (2008) y ‘The Dark Knight Rises’ (2012) </h2>
+<p style="font-size: 30px; text-align: justify; font-family:'Times News Roman'; margin-left: 80px; margin-right: 80px; color:white;"> 
+  <br> Luego del desastre que vino cuando Schumacher se hizo cargo de las películas de Batman, Warner Bros. decidió darle un descanso al personaje de DC en la pantalla grande. Sin embargo, a mediados de los 2000, Christopher Nolan se hizo cargo del héroe de Gótica y para darle vida una vez más en el cine, eligió a Christian Bale, quien venía demostrando hacer grandes interpretaciones y sobre todo, dejaba muy claro el compromiso que tenía con los papeles que tomaba.<br><br>
+  El resultado fue una trilogía que muchos consideran como las mejores cintas de Batman que se han hecho hasta la fecha. Aunque hablando del trabajo de Bale, se encargó de interpretar versiones bastante realistas de Bruce Wayne y su álter ego, porque tiene ese tono oscuro que tanto les encanta a los fans del hombre murciélago, pero también nos muestra ese lado atormentado y elegante que no habíamos visto hasta ese momento.
+</br>
+
+<img  src ="Imag/B16.png" class="img-16"style="  position: relative;  left:px; 
+right: -100px;
+top: -70px; Max-width:600px; alt=" >
+
+<img  src ="Imag/B17.png" class="img-17"style="  position: relative;  left:30pxpx; 
+right: -170px;
+top: 40px; Max-width:600px; alt=" >
+
+<img  src ="Imag/B18.png" class="img-18"style="  position: relative;  left:30pxpx; 
+right: -220px;
+top: 25px; Max-width:600px; alt=" >
+
+<br><br><h2 style="font-size: 45px; text-align: left; margin-left: 120px; margin-top: 65px; color:rgb(180, 178, 178);">Ben Affleck – ‘Batman v. Superman: Dawn of Justice’ (2016) y ‘Justice League’ (2017) y Zack Snider ‘Justice League’ (2021). The Flash (2023)</h2>
+<p style="font-size: 30px; text-align: justify; font-family:'Times News Roman'; margin-left: 80px; margin-right: 80px; color:rgb(180, 178, 178);"> 
+  <br>  Después de que Nolan y Christian Bale cerraran su historia de Batman, Warner quería retomar a este personaje tan querido. Es por eso que en una decisión que causó polémica, nombraron a Ben Aflleck como su nuevo Bruce Wayne. Y vaya que esta noticia dio de qué hablar, pues muchos criticaron que el actor no tuviera ni el físico y mucho menos el conocimiento sobre el hombre murciélago que necesitaba para interpretar este papel tan importante.<br><br>
+  Sin embargo, cayó unas cuantas bocas cuando se estrenó Batman v. Superman: Dawn of Justice, mostrando una versión del héroe de Gótica más parecida a los cómics de The Dark Knight, más grande y mucho más experimentado en su papel como héroe. Más tarde lo veríamos de nuevo con el traje y la capa en Justice League, pero debido a una serie de problemas personales, renunció a la película en solitario que protagonizaría y produciría.
+</br>
+
+<img  src ="Imag/B19.png" class="img-19"style="  position: relative;  left:px; 
+right: -50px;
+top: 50px; Max-width:600px; alt=" >
+
+<img  src ="Imag/B20.png" class="img-20"style="  position: relative;  left:30pxpx; 
+right: -100px;
+top: -50px; Max-width:600px; alt=" >
+
+<img  src ="Imag/B32.jpg" class="img-21"style="  position: relative;  left:30pxpx; 
+right: -180px;
+top: 25px; Max-width:600px; alt=" >
+
+<br><br><h2 style="font-size: 45px; text-align: left; margin-left: 120px; margin-top: 65px; color: Red;">Robert Pattinson – ‘The Batman’ (2022)</h2>
+<p style="font-size: 30px; text-align: justify; font-family:'Times News Roman'; margin-left: 80px; margin-right: 80px; color: red;"> 
+  <br>  Luego de que Ben Affleck abandonara el proyecto de The Batman, Warner Bros. no lo dejó de lado. Al contrario, Matt Reeves continuó al frente de esta producción y así como sucedió con el actor anterior, hicieron enojar a miles de personas cuando confirmaron que Robert Pattinson sería el encargado de interpretar una vez más a Bruce Wayne en la pantalla grande (ya saben, porque para muchos, sigue siendo Edward Cullen de Crepúsculo).<br><br>
+  Poco a poco, logró sorprender a los fans con los tráilers y avances que salieron de esta película y entregando un papel que no habíamos visto de Batman en la pantalla grande. Ahora, en lugar de solamente agarrarse a trancazos con los villanos –como el Acertijo y el Pingüino–, por primera vez vemos al hombre murciélago como un investigador de primera pero que, en el fondo, es un hombre roto y lleno de conflictos personales que busca venganza.
+</br>
+
+<img  src ="Imag/B22.png" class="img-22"style="  position: relative;  left:px; 
+right: -30px;
+top: 50px; Max-width:600px; alt=" >
+
+<img  src ="Imag/B23.jpg" class="img-23"style="  position: relative;  left:-150px; 
+right: -100px;
+top: -550px; Max-width:600px; alt=" >
+
+<img  src ="Imag/B24.jpg" class="img-24"style="  position: relative;  left:30pxpx; 
+right: -700px;
+top: -480px; Max-width:600px; alt=" >
+

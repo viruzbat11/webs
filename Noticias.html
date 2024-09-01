@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Interactivo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    }
+    .navbar {
+      background-color: #222;
+      overflow: hidden;
+      position: relative;
+      padding: 3px 0;
+    }
+    .navbar a {
+      float: left;
+      display: block;
+      color: rgba(255, 255, 255, 0.5);
+      text-align: center;
+      padding: 18px 19px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .navbar a:hover { color: white; }
+    .navbar a.inicio:hover { color: blue; }
+    .navbar a.noticias:hover { color: yellow; }
+    .navbar a.evolucion:hover { color: red; }
+    .navbar a.historia:hover { color: orange; }
+    .navbar a.fanarts:hover { color: blue; }
+    .navbar a.videojuegos:hover { color: violet; }
+    .search-box {
+      float: right;
+      padding: 10px 30px;
+    }
+    .search-box input[type="text"] {
+      background-color: rgb(5, 5, 5);
+      color: black;
+      border-radius: 10px;
+      padding: 6px;
+      margin-top: 1px;
+      border: none;
+      font-size: 18px;
+    }
+    /* Estilos para el menú hamburguesa */
+    .hamburguer-menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: -250px; /* Inicialmente oculto a la izquierda */
+      width: 250px;
+      background-color: #222;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      padding: 10px 0;
+      z-index: 2;
+      transition: left 0.3s; /* Agregado para animar la aparición/desaparición */
+    }
+    .hamburguer-menu a {
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+      color: white;
+      text-align: left;
+    }
+    .hamburguer-menu a:hover {
+      background-color: #333;
+    }
+    .hamburguer-icon {
+      cursor: pointer;
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      padding: 10px;
+      z-index: 3;
+    }
+    /* Contenido de las secciones */
+    .content-section {
+      display: none;
+      padding: 15px;
+      background-color: #333;
+      color: #;
+      border: 1px solid #333;
+      margin-top: 5px;
+    }
+    .active-section {
+      display: block;
+    }
+	
+  </style>
+</head>
+<body>
+
+<div class="hamburguer-icon" onclick="toggleHamburguerMenu()"></div>
+<div id="hamburguerMenu" class="hamburguer-menu">
+  <a href="#cerrar-sesion">Cerrar Sesión</a>
+  <a href="#cambiar-cuenta">Cambiar Cuenta</a>
+</div>
+
+<div class="navbar" id="myNavbar">
+  <a href="Index.html" class="tablinks Index" onclick="openSection(event, 'Index')">Inicio</a>
+  <a href="noticias.html" class="tablinks noticias" onclick="openSection(event, 'noticias')">Noticias</a>
+  <a href="evolucion.html" class="tablinks evolucion" onclick="openSection(event, 'evolucion')">Evolución</a>
+  <a href="historia.html" class="tablinks historia" onclick="openSection(event, 'historia')">Historia</a>
+  <a href="Fan Arts.html" class="tablinks fanarts" onclick="openSection(event, 'fanarts')">Fan Arts</a>
+  <a href="Video Juegos.html" class="tablinks videojuegos" onclick="openSection(event, 'videojuegos')">Video Juegos</a>
+  <div class="search-box">
+    <input type="text" placeholder="Search">
+  </div>
+
+
+  <h1 style="font-size: 45px; text-align: left; margin-left: 200px; margin-top: 65px; color: yellow;">A esperar sentados por "The Batman 2"</h1>
+  <img  src ="Imag/B5.jpg" class="img-5"style="max-width:900px;  alt=">
+  
+  
+  
+  
+  
+  
+  <p style="font-size: 30px; text-align: justify; font-family:'Times News Roman'; margin-left: 80px; margin-right: 80px; color: yellow;"> 
+       <br> Las malas noticias para DC no dejan de llegar y la más reciente parece sugerir que la reestructuración planteada por James Gunn y Peter Safran, es, cuando menos, fruto de cierta improvisación. La muy esperada segunda parte de “The Batman”, de Matt Reeves, que se tenía por uno de los grandes estrenos del año 2025, se retrasó — y sin ninguna explicación plausible — hasta el año 2026. Lo que convierte a la única película de DC que hasta ahora ha recibido apoyo unánime de crítica y público, en una ficha que pierde progresivamente su valor<br><br>Con la primera parte estrenada en el 2022, su secuela reagendada para 2026 luce tardía. Si la fecha de estreno se mantiene, habrán transcurrido cuatro años entre una y otra. Lo que hace complicado que la historia pueda satisfacer al mismo público.“The Batman” presentó a un nuevo actor — un sobrio Robert Pattinson — y además planteó un universo realista y casi gótico, que dio todo un viraje al personaje. Más joven, tenebroso, violento y en pleno crecimiento, el guion — que también escribe Reeves — analizó la forma en que un cruzado de la capa, apenas salido de la adolescencia, lucha por entender su trauma y propósito de venganza a futuro.
+       El punto de vista es radicalmente distinto a cualquier otra película de la irregular saga de Batman en el cine. Y justo allí radicaba su valor.<br><br>
+       Si la versión de Zack Snyder encarnada por Ben Affleck le mostraba viejo y pesimista, la de Tim Burton exploraba en su oscuridad.<br>Por lo que Reeves se concentró en su crecimiento, en las capas y capas de dolor que pesan sobre sus decisiones y la forma en que, en algún punto, ese sufrimiento le llevó a convertirse en un héroe, antes que un matón enmascarado.
+       Debido a lo anterior, la llegada de la segunda parte, dependía del tiempo entre la original y la continuación de la historia. Al menos para mantener la premisa intacta y que pudiera evolucionar de manera adecuada. <br><br>Lo que incluye, conservar a su elenco y trabajar en que la nueva aventura del hombre murciélago fuera, definitivamente, un proceso de maduración que le convirtiera en un antihéroe, unas veces violento, casi siempre pesaroso, mientras encuentra su punto de no retorno para asumir su responsabilidad moral con Gotham.<br><br>“The Batman 2” está en una situación complicada. No sólo debe encontrar un lugar para convertirse en objeto de interés en medio de una larga espera, sino que además tendría que enfrentar la popularidad del tradicional héroe de la casa.<br><br>
+       Una nueva película de “Superman” abrirá el espacio para nuevos relatos en pantalla. Y seguramente, también, la posibilidad de un Batman que forme parte de ese universo. <br><br>Por lo que el de Reeves tendrá que mantener su equilibrio como obra única y encontrar cómo mantener el interés en su argumento sin opacar a una segunda adaptación del personaje. </br>

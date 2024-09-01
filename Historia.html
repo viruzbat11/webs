@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Interactivo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    }
+    .navbar {
+      background-color: #222;
+      overflow: hidden;
+      position: relative;
+      padding: 3px 0;
+    }
+    .navbar a {
+      float: left;
+      display: block;
+      color: rgba(255, 255, 255, 0.5);
+      text-align: center;
+      padding: 18px 19px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .navbar a:hover { color: white; }
+    .navbar a.inicio:hover { color: blue; }
+    .navbar a.noticias:hover { color: yellow; }
+    .navbar a.evolucion:hover { color: red; }
+    .navbar a.historia:hover { color: orange; }
+    .navbar a.fanarts:hover { color: blue; }
+    .navbar a.videojuegos:hover { color: violet; }
+    .search-box {
+      float: right;
+      padding: 10px 30px;
+      color: black;
+
+    }
+    .search-box input[type="text"] {
+      background-color: rgb(0, 0, 0);
+      color: black;
+      padding: 6px;
+      border-radius: 10px;
+      margin-top: 1px;
+      border: none;
+      font-size: 18px;
+    }
+    /* Estilos para el menú hamburguesa */
+    .hamburguer-menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: -250px; /* Inicialmente oculto a la izquierda */
+      width: 250px;
+      background-color: #222;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      padding: 10px 0;
+      z-index: 2;
+      transition: left 0.3s; /* Agregado para animar la aparición/desaparición */
+    }
+    .hamburguer-menu a {
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+      color: white;
+      text-align: left;
+    }
+    .hamburguer-menu a:hover {
+      background-color: #333;
+    }
+    .hamburguer-icon {
+      cursor: pointer;
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      padding: 10px;
+      z-index: 3;
+    }
+    /* Contenido de las secciones */
+    .content-section {
+      display: none;
+      padding: 15px;
+      background-color: #333;
+      color: #;
+      border: 1px solid #333;
+      margin-top: 5px;
+    }
+    .active-section {
+      display: block;
+    }
+	
+  </style>
+</head>
+<body>
+
+<div class="hamburguer-icon" onclick="toggleHamburguerMenu()"></div>
+<div id="hamburguerMenu" class="hamburguer-menu">
+  <a href="#cerrar-sesion">Cerrar Sesión</a>
+  <a href="#cambiar-cuenta">Cambiar Cuenta</a>
+</div>
+
+<div class="navbar" id="myNavbar">
+  <a href="Index.html" class="tablinks Index" onclick="openSection(event, 'Index')">Inicio</a>
+  <a href="noticias.html" class="tablinks noticias" onclick="openSection(event, 'noticias')">Noticias</a>
+  <a href="evolucion.html" class="tablinks evolucion" onclick="openSection(event, 'evolucion')">Evolución</a>
+  <a href="historia.html" class="tablinks historia" onclick="openSection(event, 'historia')">Historia</a>
+  <a href="Fan Arts.html" class="tablinks fanarts" onclick="openSection(event, 'fanarts')">Fan Arts</a>
+  <a href="Video Juegos.html" class="tablinks videojuegos" onclick="openSection(event, 'videojuegos')">Video Juegos</a>
+  <div class="search-box">
+    <input type="text" placeholder="Search">
+  </div>
+
+  <h1 style="font-size: 45px; text-align: left; margin-left: 200px; margin-top: 65px; color: rgb(255, 187, 0);">Historia</h1>
+    <p style="font-size: 30px; text-align: justify; font-family:'Times News Roman'; margin-left: 80px; margin-right: 80px;"> 
+       <br> Batman es un personaje creado a través de las historias cómicas de Detective Comics, conocido ahora como DC comics fue creado en 1939 por los estadounidenses Bob Kane y Bill Finger. Apareció por primera vez en la historia titulada «El caso del sindicato químico» de la revista Detective Comics N.º 27, lanzada por la editorial National Publications el 30 de marzo de 1939.</br>
+
+
+<h1 style="font-size: 45px; text-align: left; margin-left: 170px; margin-top: 65px; color: rgb(255, 187, 0);">Concepto inicial de Bob Kane:</h1>
+    <p style="font-size: 30px; text-align: justify; font-family:'Times News Roman'; margin-left: 80px; margin-right: 80px;"> 
+       <br>En 1939, Bob Kane conceptualizó un personaje al que llamó “The Bat-Man”. Su diseño original incluía un antifaz, alas de murciélago y una polera roja sin guantes.
+       Sin embargo, antes de presentar su idea, acudió a un escritor colaborador: Bill Finger. </br>
+
+       
+<h1 style="font-size: 45px; text-align: left; margin-left: 170px; margin-top: 65px; color: rgb(255, 187, 0);">La influencia de Bill Finger:</h1>
+<p style="font-size: 30px; text-align: justify; font-family:'Times News Roman'; margin-left: 80px; margin-right: 80px;"> 
+   <br>Bill Finger sugirió cambios significativos que transformaron por completo a Batman:
+   Reemplazar el antifaz por una capucha.
+   Proporcionarle una capa en lugar de alas.
+   Eliminar el brillo y los colores, brindándole un aura oscura e intrigante.
+   Estas modificaciones dieron lugar al Batman que todos conocemos hoy en día.
+    </br>
+
+    <h1 style="font-size: 45px; text-align: left; margin-left: 170px; margin-top: 60px; color: rgb(255, 187, 0);">  Contribuciones continuas de Bill Finger:</h1>
+    <p style="font-size: 30px; text-align: justify; font-family:'Times News Roman'; margin-left: 80px; margin-right: 80px;"> <br> Bill Finger no solo refinó el diseño, sino que también aportó a la historia y el universo de Batman:
+        Creó elementos icónicos como el Bat-móvil, la Bat-cueva y la ciudad de Gotham.
+        Desarrolló personajes como el Joker, Catwoman, Riddler y Robin.
+        Incluso el origen de Batman basado en la tragedia (la muerte de los padres de Bruce Wayne) fue una idea suya. </br>
+
+        <h1 style="font-size: 45px; text-align: left; margin-left: 170px; margin-top: 65px; color: rgb(255, 187, 0);">Injusticia y reconocimiento tardío:</h1>
+<p style="font-size: 30px; text-align: justify; font-family:'Times News Roman'; margin-left: 80px; margin-right: 80px;"> 
+   <br>A pesar de su contribución vital, Bill Finger vivió en la pobreza y no recibió reconocimiento público como co-creador hasta el estreno de la película “Batman v Superman: Dawn of Justice”.
+   Bob Kane, en varias ocasiones, refutó la participación de Finger en el desarrollo de la obra, atribuyéndose todo el crédito
+    </br>
+
+    <br>En resumen, Bill Finger fue el auténtico héroe anónimo detrás de Batman, y su creatividad y visión transformaron al Caballero Oscuro en el legendario superhéroe que conocemos hoy
+    </br>
+<br><br>
+
+<h1 style="font-size: 45px; text-align: left; margin-left: 120px; margin-top: 65px; color: rgb(255, 187, 0);">Así lucia Batman en su primera versión hecha por Bob Kane:</h1>
+    
+       <img  src ="Imag/1B.png" class="img-1" alt="">
+
+       <p style="font-size: 30px; text-align: justify; font-family:'Times News Roman'; margin-left: 80px; margin-right: 80px;"> 
+        <br>Laprimera Versión de Batman creada por Bob Kane mostraba un personaje con un traje rojo, calzones negros y un antifaz simple. Este diseño fue antes de que Bill Finger hiciera sus sugerencias que llevaron al icónico traje gris y negro con capa y capucha que conocemos hoy.</br>
+ 
+        <h1 style="font-size: 45px; text-align: left; margin-left: 120px; margin-top: 65px; color: rgb(255, 187, 0);">Así lucia Batman en su volumen N. 1 por Mano de Bill Finger</h1>
+    
+        <img  src ="Imag/B2.jpg" class="img-2" alt="">
+        <p style="font-size: 30px; text-align: justify; font-family:'Times News Roman'; margin-left: 80px; margin-right: 80px;"> 
+            <br>Bill Finger sugirió cambios significativos que transformaron por completo a Batman:
+            Reemplazar el antifaz por una capucha.
+            Proporcionarle una capa en lugar de alas.
+            Eliminar el brillo y los colores, brindándole un aura oscura e intrigante.
+            Estas modificaciones dieron lugar al Batman que todos conocemos hoy</br>
+
+            <h1 style="font-size: 45px; text-align: left; margin-left: 120px; margin-top: 65px; color: rgb(255, 187, 0);">El origen de Batman</h1>
+            <p style="font-size: 30px; text-align: justify; font-family:'Times News Roman'; margin-left: 80px; margin-right: 80px;"> 
+                <br>El multimillonario filántropo, Thomas Wayne, su esposa, Martha junto a su hijo de 8 años, Bruce Wayne, estaban saliendo de un cine una noche cuando se dirigieron hacia Park Row. De repente, un matón llamado Joe Chill armado con una pistola se acercó hacia ellos desde las sombras para robar el collar de perlas que Martha llevaba. Con Bruce viendo todo, Chill disparó y mató a Thomas Wayne a sangre fría cuando este protegió a su esposa y luego Martha también fue asesinada mientras gritaba por ayuda. Bruce quedó severamente traumatizado por la muerte de sus padres. Ya nunca más sería el mismo. Después de ser criado por su sabio y leal mayordomo Alfred Pennyworth, Bruce heredó la gran fortuna de su familia, así también la compañía de su padre, Wayne Enterprises. Una noche, de pie ante las tumbas de sus padres, Bruce les hizo un solemne juramento de combatir el crimen en todos sus aspectos, haciendo justicia por su propia mano.
+                A pesar de la seguridad fiscal, la felicidad eludió a Bruce. Bruce fue consolado por la Dr. Leslie Thompkins, quien le ayudó a llorar a sus padres y a encontrar un propósito en la vida.<br><br> A los catorce años, Bruce comenzó un viaje de doce años por todo el mundo en busca de expertos en muchos campos de combate, entrenándose mental y físicamente. Desde el punto de vista académico, estudió en Cambridge (Inglaterra), la Sorbona en Francia, y otras famosas universidades europeas. Un francés llamado Henri Ducard le enseñó cómo cazar y perseguir a una persona, un ninja llamado Kirigi le enseñó el sigilo, un bosquimano africano lo entrenó en el arte de la caza, y los monjes de Nepal le enseñaron la curación.
+                Bruce volvió a Ciudad Gótica, donde se convirtió en un justiciero. Pero a pesar de todas sus habilidades afinadas, sabía que algo le faltaba. Bruce quería que los delincuentes fueran "muy supersticiosos y cobardes", y con el fin de liberar a su ciudad del mal, tuvo que convertirse en un símbolo tan aterrador que le permitiera infundir el miedo en los corazones de los criminales. <br><br>Una noche, en el estudio de su padre, un gran murciélago pasó a través de la ventana. Bruce vio esto como un presagio y recordó su miedo hacia los murciélagos cuando era niño. Entonces supo que ese iba a ser su símbolo, el Murciélago lo ayudaría a infundir terror en los bajos fondos de Gótica. Haciendo uso de su riqueza, Bruce diseñó un traje y todo el equipo complementario, comenzando así una doble vida: durante el día, él sería el playboy multimillonario y hombre de negocios, Bruce Wayne; de noche, sería el Caballero de Noche, Batman.</br>
+<br><br><br>
+                <img  src ="Imag/B3.png" class="img-3" alt="">
+                <br>Esta es la portada del primer comic de Batman que se publicó en 1939 y su logo de título Bat-Man.</br>
+<br><br><br> 

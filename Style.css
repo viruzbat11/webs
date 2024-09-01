@@ -1,0 +1,40 @@
+.img-1{
+    position: relative;
+    left: 20px; 
+    right: 20px;
+    top: -50px;
+}
+
+.Img-2{
+    position: relative;
+    left: 20px; 
+    right: 20px;
+    top: -50px;
+}
+
+.Img-3{
+    position: relative;
+    left: 30px; 
+    right: 20px;
+    top: -50px;
+    width: 50px;
+    height: 40px;
+}
+
+.Img-5{
+    display: block;
+    margin: auto;
+    max-width: 100%; /* Esto asegura que la imagen no sea más ancha que su contenedor */
+    height: auto; /* Esto mantendrá la proporción de la imagen */
+
+}
+
+.Img-6{
+    position: center
+    ;
+    left: 80px; 
+    right: 60px;
+    top: -50px;
+    width: 50px;
+    height: 40px;
+}
